@@ -18,6 +18,7 @@ def main():
                 return
             screen.fill("black")
         dt += clock.tick(60) / 1000.0
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
